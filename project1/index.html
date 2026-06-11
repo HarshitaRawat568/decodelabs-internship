@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs — Frontend Internship Project 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="DecodeLabs Home">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">DecodeLabs</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg-shape hero-bg-shape--1" aria-hidden="true"></div>
+      <div class="hero-bg-shape hero-bg-shape--2" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Frontend Development &middot; Project 1</p>
+        <h1 id="hero-heading" class="hero-title">
+          Build things<br />
+          <span class="hero-title--accent">the web remembers.</span>
+        </h1>
+        <p class="hero-description">
+          Crafting clean, semantic, and accessible static webpages with
+          pure HTML &amp; CSS &mdash; foundations that scale into anything.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#about" class="btn btn--ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-card__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+          </div>
+          <pre class="code-card__body"><code><span class="c-tag">&lt;header&gt;</span>
+  <span class="c-tag">&lt;nav&gt;</span>
+    <span class="c-tag">&lt;ul&gt;</span>
+      <span class="c-tag">&lt;li&gt;</span><span class="c-text">Home</span><span class="c-tag">&lt;/li&gt;</span>
+    <span class="c-tag">&lt;/ul&gt;</span>
+  <span class="c-tag">&lt;/nav&gt;</span>
+<span class="c-tag">&lt;/header&gt;</span>
+<span class="c-tag">&lt;main&gt;</span>
+  <span class="c-tag">&lt;section&gt;</span>
+    <span class="c-tag">&lt;h1&gt;</span><span class="c-text">Hello World</span><span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;/section&gt;</span>
+<span class="c-tag">&lt;/main&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label">About the Internship</div>
+        <h2 id="about-heading" class="section-title">Structure before style.<br />Semantics before design.</h2>
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-card__icon" aria-hidden="true">🏗️</div>
+            <h3 class="about-card__title">Information Architecture</h3>
+            <p class="about-card__text">
+              We plan content hierarchy before writing a single line of code.
+              A logical sitemap defines how users navigate and find what they need.
+            </p>
+          </article>
+          <article class="about-card">
+            <div class="about-card__icon" aria-hidden="true">🧠</div>
+            <h3 class="about-card__title">Semantic HTML</h3>
+            <p class="about-card__text">
+              Tags like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; give meaning to content,
+              not just structure. Screen readers and search engines depend on it.
+            </p>
+          </article>
+          <article class="about-card">
+            <div class="about-card__icon" aria-hidden="true">🎨</div>
+            <h3 class="about-card__title">CSS Engineering</h3>
+            <p class="about-card__text">
+              External stylesheets only. DRY principle applied. Grid for macro layout,
+              Flexbox for micro alignment. No inline styles, ever.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CONTENT GRID SECTION -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label">Milestone Projects</div>
+        <h2 id="projects-heading" class="section-title">Skills built,<br />one project at a time.</h2>
+        <div class="projects-grid">
+
+          <article class="project-card project-card--featured">
+            <div class="project-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop"
+                alt="Code editor showing HTML and CSS on a dark screen"
+                width="800"
+                height="500"
+              />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Phase I &middot; Current</span>
+              <h3 class="project-card__title">Static Webpage Design</h3>
+              <p class="project-card__text">
+                Build a pixel-perfect static foundation using semantic HTML and
+                external CSS. Master structure, hierarchy, and layout systems.
+              </p>
+              <a href="#" class="btn btn--primary btn--sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=380&fit=crop"
+                alt="Developer writing code on a laptop with multiple screens"
+                width="600"
+                height="380"
+              />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag project-card__tag--locked">Phase II &middot; Locked</span>
+              <h3 class="project-card__title">Responsive Layouts</h3>
+              <p class="project-card__text">
+                Media queries, mobile-first design, and fluid typography.
+                Unlocked after Project 1 passes quality audit.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=380&fit=crop"
+                alt="Person coding on a laptop in a modern workspace"
+                width="600"
+                height="380"
+              />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag project-card__tag--locked">Phase III &middot; Locked</span>
+              <h3 class="project-card__title">JavaScript Interactivity</h3>
+              <p class="project-card__text">
+                DOM manipulation, event handling, and dynamic UI updates.
+                The visual architecture must pass audit first.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=380&fit=crop"
+                alt="UI and UX design wireframes and mockups laid out on paper"
+                width="600"
+                height="380"
+              />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag project-card__tag--locked">Phase IV &middot; Locked</span>
+              <h3 class="project-card__title">Portfolio Capstone</h3>
+              <p class="project-card__text">
+                Bring everything together into a fully designed, accessible,
+                production-ready portfolio site.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS / CHECKLIST SECTION -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label">Core Competencies</div>
+        <h2 id="skills-heading" class="section-title">The flight checklist.</h2>
+        <ul class="skills-list" aria-label="Project requirements checklist">
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">IA &mdash; Information Architecture</h3>
+              <p class="skill-item__text">Logical sitemap defined before any code is written.</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">HTML &mdash; Semantic Tags</h3>
+              <p class="skill-item__text">Proper landmarks: header, main, footer. One h1 per page only.</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">CSS &mdash; External Files Only</h3>
+              <p class="skill-item__text">DRY principle. No IDs for styling. No inline styles.</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">Layout &mdash; Grid + Flexbox</h3>
+              <p class="skill-item__text">Grid for macro page structure. Flexbox for micro component alignment.</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">Assets &mdash; Explicit Dimensions</h3>
+              <p class="skill-item__text">All images have width, height, and descriptive alt text.</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-item__check" aria-hidden="true">&#10003;</span>
+            <div>
+              <h3 class="skill-item__title">Validation &mdash; W3C &amp; Lighthouse</h3>
+              <p class="skill-item__text">Zero HTML errors. Accessibility contrast ratio greater than 4.5:1.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo logo--light" aria-label="DecodeLabs Home">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span class="logo-text">DecodeLabs</span>
+          </a>
+          <p class="footer-tagline">
+            Build it well &mdash; the frontend is the only part of the system the world will ever see.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h2 class="footer-heading">Contact Us</h2>
+          <address class="contact-list">
+            <p>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918933006408" class="contact-link">+91 89330 06408</a>
+            </p>
+            <p>
+              <span class="contact-label">Email</span>
+              <a href="mailto:decodelabs.tech@gmail.com" class="contact-link">decodelabs.tech@gmail.com</a>
+            </p>
+            <p>
+              <span class="contact-label">Website</span>
+              <a href="https://www.decodelabs.tech" class="contact-link" target="_blank" rel="noopener noreferrer">www.decodelabs.tech</a>
+            </p>
+            <p>
+              <span class="contact-label">Location</span>
+              <span class="contact-link">Greater Lucknow, India</span>
+            </p>
+          </address>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Quick Links</h2>
+          <nav aria-label="Footer navigation">
+            <ul class="footer-nav-list">
+              <li><a href="#home" class="footer-nav-link">Home</a></li>
+              <li><a href="#about" class="footer-nav-link">About</a></li>
+              <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+              <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+              <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 DecodeLabs. Industrial Training Kit &middot; Batch 2026.</p>
+        <p class="footer-copy">Built with semantic HTML &amp; pure CSS &mdash; Project 1 Submission.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
